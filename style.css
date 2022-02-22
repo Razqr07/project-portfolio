@@ -7,7 +7,10 @@ body {
     color: white;
 }
 
-
+.bigHeader{
+  text-align: center;
+  padding-top: 25px;
+}
 .container {
 	width: 80%;
 	margin: 15;
@@ -23,10 +26,7 @@ header::after {
   clear: both;
 }
 
-.logo {
-  float: left;
-  padding: 10px 0;
-}
+
 
 nav {
   float: left;
@@ -36,14 +36,15 @@ nav ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  
 }
 
 nav li {
   display: inline-block;
   margin-left: 70px;
-  padding-top: 23px;
+  padding-top: 5px;
   padding-bottom: 23px;
-
+  margin-top: 13px;
   position: relative;
 }
 
@@ -52,6 +53,8 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
+  
+  
 }
 
 nav a:hover {
@@ -67,7 +70,7 @@ nav a::before {
   position: absolute;
   top: 0;
   width: 0%;
-
+  
   transition: all ease-in-out 250ms;
 }
 
@@ -75,15 +78,15 @@ nav a:hover::before {
   width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 .about-wrapper{
-    height: 100vh;
+    height: 90vh;
 }
 .about-left{
     background-color: #21D4FD;
@@ -92,7 +95,7 @@ nav a:hover::before {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 90vh;
     color:#fff
 }
 .about-left-content > div{
@@ -171,7 +174,7 @@ nav a:hover::before {
 }
 .about-right{
     background: #222;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -323,7 +326,7 @@ nav a:hover::before {
   
   .product-img {
     float: left;
-    height: 420px;
+    height: 400px;
     width: 327px;
   }
   
@@ -340,7 +343,7 @@ nav a:hover::before {
   }
   
   .product-text {
-    height: 300px;
+    height: 340px;
     width: 327px;
   }
   
@@ -377,13 +380,61 @@ nav a:hover::before {
     overflow: hidden;
   }
   
-  
-  
   span {
     display: inline-block;
     height: 50px;
-    font-family: 'Suranna', serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 34px;
   }
-  
- 
+
+  #skills {
+    padding: 50px;
+    background-color: #FFF;
+    font-family: 'Work Sans', sans-serif;
+    color: #000;
+    border-radius: 10px;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 960px;
+    box-sizing: border-box;
+    margin-top: 25px;
+  }
+  #skills .TitleHead{
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Work Sans', sans-serif ;
+  }
+  #skills li {
+    position: relative;
+    margin-bottom: 32px;
+    padding-left: 6px;
+  }
+  #skills li .bar-container,
+  #skills li .bar {
+    position: absolute;
+    left: 0;
+    height: 5px;
+    border-radius: 5px;
+    content: "";
+  }
+  #skills li .bar-container {
+    bottom: -8px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+  #skills li .bar-container .bar {
+    top: 0;
+  }
+  #skills p {
+    margin-bottom: 15px;
+  }
+  #skills li .bar-container .pct {
+    position: absolute;
+    top: 15px;
+    right: 0;
+    opacity: 0;
+    font-size: 15px;
+    transition: opacity 0.3s linear;
+  }
