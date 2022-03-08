@@ -64,11 +64,11 @@ nav a:hover {
 nav a::before {
   content: '';
   display: block;
-  height: 5px;
+  height: 2px;
   background-color: #444;
 
   position: absolute;
-  top: 0;
+  bottom: 35%;
   width: 0%;
   
   transition: all ease-in-out 250ms;
@@ -197,6 +197,7 @@ nav a:hover::before {
 .about-btns{
     display: flex;
     margin: 2rem 0;
+    
 }
 .btn{
     border: none;
