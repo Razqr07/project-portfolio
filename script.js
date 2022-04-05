@@ -24,7 +24,7 @@
                 .css( "background-color", data.color )
                 .animate({
                   "width": $pct.html()
-                }, data.speed || 2000, function() {
+                }, data.speed || 1000, function() {
   
                   $pct.css({
                     "color": data.color,
